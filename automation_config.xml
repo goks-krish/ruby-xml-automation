@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<automation version="1.0">
+	<book_full_name>com.medhand.books.vfass_revision_2012_1</book_full_name> <!--  Book full name -->
+	<encrytion_key>fass</encrytion_key> <!--  Encryption key -->
+	<max_file_size>50</max_file_size> <!--  bundle size -->
+	<max_file_count>3</max_file_count> <!--  bundle file count not required if max_file_size is specified -->
+	<max_update_limit>27</max_update_limit> <!-- % of Updates to book size. Exceeding updates will be deleted -->
+	<initial_timestamp>2012-10-01 00:00:00</initial_timestamp> <!-- Needed for new book generation -->
+	<update_timestamp>2012-12-02 00:00:00</update_timestamp> <!-- Needed for update & not present for new book generation -->
+	
+	<!-- VFASS Downloader  -->
+	<run_downloader>true</run_downloader> <!--  Enables/Disables Fass downloader tool -->
+	<user_id>1074</user_id> <!-- user id for fass downloader tool -->
+	<check_interval>4</check_interval> <!-- Interval in days for which updates are downloaded -->
+	<manifest_file>vfass.xml</manifest_file> <!-- Manifest file name -->
+	<start_date>2011-01-01</start_date> <!-- Start date for first download -->
+	
+	<!--  Auto upload book & update to server -->
+	<run_uploader>true</run_uploader> <!--  Enables/Disables Uploader tool -->
+	<url>books-iphone.medhand.com</url> <!--  URL to the server -->
+	<key></key> <!-- Secret key. Not to be stored in any server. Filled only when running script -->
+
+</automation>
+
